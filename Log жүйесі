@@ -1,0 +1,15 @@
+import logging
+
+# Лог баптау
+logging.basicConfig(
+    filename='system.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+# Лог жазу
+logging.info("Жүйе іске қосылды")
+logging.warning("Ескерту хабарламасы")
+logging.error("Қате орын алды")
+
+print("Логтар system.log файлына сақталды")
